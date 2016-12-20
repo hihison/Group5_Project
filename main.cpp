@@ -58,11 +58,13 @@ int main(){
 				break;
 			case 2 :
 				printf("game2\n");
+				shetiqihontk();
 				break;
 			case 3:
 				guessnum();
 				break;
 			case 4:
+				bj();
 				break;
 			
 		};
