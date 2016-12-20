@@ -24,11 +24,10 @@ void check(int A,int a[4]);
 void guessnum();
 //structure of game: guesssnumber// created by ±i¥H°Ç // 
 
-void init(int board[][8]);
-void printboard(int board[8][8]);
-int laddersnake();
-int shetiqihontk();
-//structure of game: shetiqihontk//  code by TKHon // 
+void init(int board[][10]);
+void printboard(int board[10][10]);
+int shetiqi();
+//structure of game: 2playersshetiqi//  code by TKHon // 
 
 void aiDeawOne();
 int srandcard_com();

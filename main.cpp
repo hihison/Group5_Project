@@ -1,52 +1,69 @@
 #include "group5.h"
-//ז•´ו€‹MAINח„UIיƒ½ו¾ˆה¸‘ 
+//¾ד­׃MAIN×÷UI³£«Ü₪¡ 
 int score = readfile();
 char menu;
 //Created by hihison 
-void printmenu(){ //זˆ‘ח„ה¸»ה÷÷ז˜¯ hihison 
+void animation(){
+	system("cls");
+	system("COLOR 70");
+	printf("\n                                                ¥‏°ך³ּ₪j×÷¹Cְ¸¨t²־               \n");
+	delay(0.5);
+	printf("                                                 ₪W");
+	delay(0.2);
+	printf("     ½u");
+	delay(0.2);
+	printf("     ֵo\n");   
+	delay(0.5);	
+}
+void printmenu(){ //§Ú×÷¥D₪H¬O hihison 
 	score = readfile();
 	system("mode con:cols=120 lines=30");
 	system("cls");
 	system("COLOR 70");
-	printf("\n                                                ו…¨ו‹ז€ו₪§ח„יזˆ²ח³»חµ±               \n");
-	delay(0.005);
-	printf("                                                 ה¸");
-	delay(0.005 );
-	printf("     ח·");
-	delay(0.005);
-	printf("     ו›‰\n");   
-	delay(0.005);
-	//ה¸ח·ו›‰!! (ה¸‹ח·ח‰ˆ) 
-	printf("            ג•”ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•—\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•‘                  ו››ו€‹יזˆ²ה»»ו›י¸ז“‡                                                      ג•‘\n");
-	printf("            ג•‘                                                                                        ג•‘\n");	
-	printf("            ג•‘                  1. Riddle                                                             ג•‘\n");	
-	printf("            ג•‘                                                                                        ג•‘ \n");	
-	printf("            ג•‘                  2. י­¯ט›‡ז£‹ /no                                                         ג•‘\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•‘                  3. חז•¸ו­—                                                             ג•‘\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•‘                  4. ו»¿ה¸€י»   /no                                                       ג•‘\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•‘                  ט«‹ה»¥ז•¸ו­—יµי¸ז“‡,ז‰ ז•¸ו­—0 י›¢י–‹ז¬ח³»חµ± ...                                ג•‘\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•\n");
-	printf("            ג•”ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•—\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•‘                ח¾ז‰וˆ†ז•¸ : %d                                                          ג•‘\n",score);
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•‘                                                                                        ג•‘\n");
-	printf("            ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•ג•\n");
+	printf("\n                                                ¥‏°ך³ּ₪j×÷¹Cְ¸¨t²־               \n");
+	
+	printf("                                                 ₪W");
+	
+	printf("     ½u");
+	
+	printf("     ֵo\n");   
+	
+	//₪W½uֵo!! (₪U½u×©) 
+	printf("            שÝשששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששß\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                  ¥|­׃¹Cְ¸¥פ§g¿ן¾Ü                                                      שר\n");
+	printf("            שר                                                                                        שר\n");	
+	printf("            שר                  1. Riddle                                                             שר\n");	
+	printf("            שר                                                                                        שר \n");	
+	printf("            שר                  2. ¾|³D´ׁ                                                             שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                  3. ²q¼ֶ¦r                                                             שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                  4. ₪Ü₪@ֲI                                                             שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                  ½׀¥H¼ֶ¦rֱה¿ן¾Ü,«צ ¼ֶ¦r0 ֲק¶}¥»¨t²־ ...                                שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שדשששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששו\n");
+	printf("            שÝשששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששß\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                ²{¦³₪ְ¼ֶ : %d                                                          שר\n",score);
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שדשששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששו\n");
 }
 int main(){
+	if (score<0){
+		MessageBox(NULL, "YOU DONT HAVE ENOUGH SCORE TO PLAY ON THIS SYSTEM !", "ERROR", MB_OK);
+		exit(1);
+	}
 	readfile();
 	printf("");
 	
 	int imenu = 1;
+	animation();
 	do{
 		printmenu();
 		menu = getch();
@@ -58,13 +75,16 @@ int main(){
 				riddle();
 				break;
 			case 2 :
-				printf("game2\n");
-				shetiqihontk();
+				system("cls");
+				
+				shetiqi();
 				break;
 			case 3:
+				system("cls");
 				guessnum();
 				break;
 			case 4:
+				system("cls");
 				bj();
 				break;
 			
@@ -76,7 +96,7 @@ int main(){
 	} while (imenu!=0);
 	MessageBox(NULL, "Good Bye!", "Bye", MB_OK);
 	savefile(score);
-
+	system("color  00");
 	
 }
 

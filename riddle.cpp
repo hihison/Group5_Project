@@ -68,7 +68,34 @@ void  riddle () {
 	system("color F2");
 	system("@ECHO off");
 	int number ;
-	printf("Please type in how many questions you want to answer : ");
+	
+	
+	
+	
+	
+	printf("            שÝשששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששß\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                  Riddle - The English Spelling Game                                    שר\n");
+	printf("            שר                                                                                        שר\n");	
+	printf("            שר                                                                                        שר\n");	
+	printf("            שר                                                                                        שר \n");	
+	printf("            שר                  Please type in how many questions you want to answer :                שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שדשששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששו\n");
+	
+	
+	
+	
+	
+	
 	scanf("%d",&number);
 	//get times to answer
 	
@@ -80,9 +107,38 @@ void  riddle () {
 	do{
 		system("COLOR F0");
 		system("cls");
-	    printf("Recent score : %d \n", score);
+		
+		
+		
+		
+		
+	printf("            שÝשששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששß\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                  Riddle - The English Spelling Game                                    שר\n");
+	printf("            שר                                                                                        שר\n");	
+	printf("            שר                  Recent score : %d                                                    שר\n",score);	
+	printf("            שר                                                                                        שר \n");	
+	printf("            שר                  Question %d                                                            שר\n",i+1);
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר %s                     שר\n",q[rq]);
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שר                                                                                        שר\n");
+	printf("            שדשששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששששו\n");
+		
+		
+		
+		
+		
+		
+		
+	  /*  printf("Recent score : %d \n", score);
 		printf("%s\n",q[rq]);
-		printf("Answer Here: ");
+		printf("Answer Here: ");*/
 		scanf("%s",&answer[i]);
 		str_low(answer[i],anslow[i]);
 		printf("you typed : %s , Sure? (Y/N) \n",anslow[i]);
