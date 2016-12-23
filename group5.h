@@ -22,7 +22,7 @@ void setSubject(int a[4] );
 int guestAnswer(int a[4]);
 void check(int A,int a[4]);
 void guessnum();
-//structure of game: guesssnumber// created by ±i¥H°Ç // 
+//structure of game: guesssnumber// created by Â±iÂ¥HÂ°Ã‡ // 
 
 void init(int board[][10]);
 void printboard(int board[10][10]);
@@ -39,8 +39,7 @@ int Menu();
 void com_printcard();
 int player_printcard();
 void bj();
-
-
+//scructure of game : BlackJack // code by Lui Siu Hin // 
 
 
 
