@@ -3,8 +3,8 @@
 void delay(int sec) 
 { 
 	time_t _t; 
-	_t = time (NULL); // ?????? 
-	while(time (NULL) <= _t + sec){}; // ????? 
+	_t = time (NULL); 
+	while(time (NULL) <= _t + sec){}; 
 } 
 //time delay for seconds
 
@@ -53,16 +53,21 @@ void  riddle () {
 	int score = readfile();
 	int rq ;
 	
+	
 	question = fopen("gamedata/question.txt", "r");
 	while (fgets(data,999,question)!=NULL){
 		strcpy(q[counter],data);
 		counter=counter+1;
 	} fclose(question); 
+	
+	//first method to get data from txt files
 		
 	ansfile = fopen("gamedata/answer.txt", "r");
 	for (int get = 0; get<=counter ; get++){
 		data2[get] = fscanf(ansfile,"%s",a[get]);
 	}fclose(ansfile);
+	//and this is the second one 
+	
 	//get questions and answer by reading txt files
 	
 	system("color F2");
@@ -73,23 +78,23 @@ void  riddle () {
 	
 	
 	
-	printf("            ùÝùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùß\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                  Riddle - The English Spelling Game                                    ùø\n");
-	printf("            ùø                                                                                        ùø\n");	
-	printf("            ùø                                                                                        ùø\n");	
-	printf("            ùø                                                                                        ùø \n");	
-	printf("            ùø                  Please type in how many questions you want to answer :                ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùãùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùå\n");
+	printf("            Ã¹ÃÃ¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹ÃŸ\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                  Riddle - The English Spelling Game                                    Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");	
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");	
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸ \n");	
+	printf("            Ã¹Ã¸                  Please type in how many questions you want to answer :                Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã£Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¥\n");
 	
 	
 	
@@ -112,23 +117,23 @@ void  riddle () {
 		
 		
 		
-	printf("            ùÝùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùß\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                  Riddle - The English Spelling Game                                    ùø\n");
-	printf("            ùø                                                                                        ùø\n");	
-	printf("            ùø                  Recent score : %d                                                    ùø\n",score);	
-	printf("            ùø                                                                                        ùø \n");	
-	printf("            ùø                  Question %d                                                            ùø\n",i+1);
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø %s                     ùø\n",q[rq]);
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùø                                                                                        ùø\n");
-	printf("            ùãùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùå\n");
+	printf("            Ã¹ÃÃ¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹ÃŸ\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                  Riddle - The English Spelling Game                                    Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");	
+	printf("            Ã¹Ã¸                  Recent score : %d                                                    Ã¹Ã¸\n",score);	
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸ \n");	
+	printf("            Ã¹Ã¸                  Question %d                                                            Ã¹Ã¸\n",i+1);
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸ %s                     Ã¹Ã¸\n",q[rq]);
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã¸                                                                                        Ã¹Ã¸\n");
+	printf("            Ã¹Ã£Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¹Ã¥\n");
 		
 		
 		
@@ -169,10 +174,10 @@ void  riddle () {
 				system("COLOR 4F"); 
 				MessageBox(NULL, "Oops! Wrong!", "OMG", MB_OK);	
 		    	printf("Wrong, the answer is %s\n",a[rq]);
- 		    	delay(0.2);
+ 		    	delay(0.1);
 				system("COLOR F4"); 	
 			    printf("Unluckly , you lose $5\n");
- 			    delay(0.2);		
+ 			    delay(0.1);		
 			    system("COLOR 4F"); 
 			    printf("You now have scores : %d  \n",score) ;
  			    delay(0.5);	
@@ -182,7 +187,8 @@ void  riddle () {
 	savefile (score);
 	system("COLOR 61"); 	
 	system("cls");
-	printf("You totally have scores %d\n", score);
+	printf("You totally have scores %d\n Back to Main Menu...", score);
+	delay(0.5);
 	
 	
 	
